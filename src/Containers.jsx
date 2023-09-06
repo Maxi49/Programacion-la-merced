@@ -1,29 +1,43 @@
 import { Grid, Typography,Paper, makeStyles, Button, createTheme, ThemeProvider } from '@mui/material'
 import { Box, Container, Stack, display, height, typography } from '@mui/system'
 import React from 'react'
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
 const theme = createTheme()
 
 theme.typography.h3 = {
-    fontSize: '1.2rem',
+    fontSize: '2rem',
     [theme.breakpoints.up('md')] : {
         fontSize: '4rem'
-    }
+    },
+    fontFamily: [
+        'Poppins'
+    ]
+}
+theme.typography.h5 = {
+    fontSize: '1.2rem',
+    [theme.breakpoints.up('md')] : {
+        fontSize: '2rem'
+    },
+    fontFamily: [
+        'Poppins'
+    ]
 }
 
 
 export const Containers = () => {
     return (
-      <Container fixed maxWidth='lg' sx={{display:'flex',flexDirection:'column',justifyContent:'space-evenly'}} >
-          <Typography variant='h3' component={'h2'} color={'white'} >
+        <>
+        <ThemeProvider theme={theme} >
+        <Typography variant='h5' component={'h2'} color={'white'} >
             Nuestros proyectos
           </Typography>
-          <ThemeProvider theme={theme} >
+
           <Grid mt={2} container spacing={3}>
           <Grid item xs={12} >
               <Paper elevation={12} sx={{height:{xs:200, md:300,background:'-webkit-linear-gradient(to right, #5c258d, #4389a2)',
               background: '#5c258d',
-              background:'linear-gradient(to right, #5c258d, #4389a2)',
+              background:'linear-gradient(to right, #5c258d, #4389a2,#000000)',
               display:'flex',
               flexDirection:'column',
               justifyContent:'center',
@@ -31,15 +45,13 @@ export const Containers = () => {
             }}} >
                 <Box m={{xs:2,sm:3,md:5}}>
                   <Typography variant='h3' >
-                      Algo de info aca
+                      Coleccion de proyectos
                   </Typography>
-                  <Typography variant='h6' >
+                  <Typography mt={1} variant='h5' >
                       info mini aca
                   </Typography>
-                  <Box display={{xs:'none',small:'none',md:'block'}} >
-                    <Button variant='contained' >
-                        Y este boton que hace algo
-                    </Button>
+                  <Box mt={1} >
+                    <ArrowCircleRightOutlinedIcon fontSize='large' />
                   </Box>
                 </Box>
               </Paper>
@@ -82,7 +94,7 @@ export const Containers = () => {
       </Grid>
           </ThemeProvider>
 
-      </Container>
+        </>
     )
-  }
+}
   

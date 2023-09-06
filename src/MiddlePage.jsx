@@ -4,23 +4,38 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { ThemeProvider, createTheme } from '@mui/material';
+
+const theme = createTheme()
+
+theme.typography.h1 = {
+  fontSize: '2rem',
+  [theme.breakpoints.up('md')] : {
+      fontSize: '5rem'
+  },
+  fontFamily: [
+      'Poppins'
+  ]
+}
 
 export function MiddlePage() {
   return (
       <Stack sx={{
         display:'flex',
         mt:{xs:3,md:12},
-        gap:{xs:0,sm:7,md:10}
+        gap:{xs:0,sm:7,md:30}
       }} direction={{ xs: 'column', sm: 'row' }}>
         <Grid item>
-          <Typography
+          <ThemeProvider theme={theme} >
+            <Typography
             sx={{ mt: 9,mb:{xs:3,md:0} }}
-            variant="h3"
+            variant="h1"
             color={'white'}
             component={'h2'}
-          >
+            >
             Unite al Taller.
-          </Typography>
+            </Typography>
+          </ThemeProvider>
         </Grid>
         <Grid item>
           <Grid container direction={'column'}>

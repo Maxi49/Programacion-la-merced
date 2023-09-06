@@ -29,18 +29,19 @@ theme.typography.h1 = {
 export const Title = () => {
   return (
     <Grid item sx={{display:'flex',flexDirection:'column',justifyContent:'center'}} >
+        <ThemeProvider theme={theme} >
         <Box sx={{display:'flex',flexDirection:'row',justifyContent:'center',mt:6,alignItems:'center'}} >
             <Container maxWidth='md' >
                 <Box sx={{display:'flex',flexDirection:'column'}}>
                     <Box marginBottom={3} >
-                    <ThemeProvider theme={theme} >
+
                         <Typography variant={'h1'} component={'h1'} sx={{
                         color:'white',
                         fontFamily: 'Poppins'
                         }} >
                         Taller de programacion
                         </Typography>
-                    </ThemeProvider>
+                   
                     <Typography variant='h5' component={'p'} sx={{
                         color:'grey',
                         mt:3,
@@ -101,10 +102,11 @@ export const Title = () => {
                             backdropFilter:'blur(400px)',
                             boxShadow:'1px 1px 800px rgb(47, 0, 255,10)',
                             
-                        }} src="../Public/Yess sirr.png" alt=""/>
+                        }} src="../Public/Python.png" alt=""/>
                 </Box>
         </Box>
         <Typography variant='h5' sx={{display:'flex',justifyContent:'center',mt:10,ml:{xs:3,md:0}}} color={'grey'} >Lorem ipsum dolor sit amet consectetur adipisicing elit.</Typography>
+        </ThemeProvider>
     </Grid>
 )
 }
