@@ -53,17 +53,14 @@ export const Title = () => {
                         flexDirection:'row',
                         mt:2
                     }} >    
-                    <Button variant='contained' sx={{
-                        width:100,
+                    <Button variant='contained' size={'medium'} sx={{
                         mr:3,
-                        }} >Start</Button>
-                    <Button variant='outlined' sx={{
+                        }} >Anotarse</Button>
+                    <Button variant='outlined' size='medium' sx={{
                         display:'flex',
                         flexDirection:'row',
                         alignItems:'center',
                         justifyContent:'center',
-                        width:140,
-                        height:40,
                         borderRadius:5,
                         textAlign:'center',
                         alignSelf:'center'
@@ -94,10 +91,10 @@ export const Title = () => {
             </Container>
                     
                 <Box sx={{marginLeft:9,
-                    display:{md:'flex',xs:'none'}
+                    display:{md:'flex',xs:'none',sm:'none'}
                 }} >
                 <img width={400} style={{
-                            background:'rgb(47, 0, 255,0.360)',
+                            background:'rgb(47, 0, 255,0.350)',
                             borderRadius:1000,
                             border:'none',
                             borderStyle:'hidden',

@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { width } from '@mui/system';
 import { Grid } from '@mui/material';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Proyectos', 'Anotarse'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
