@@ -37,7 +37,7 @@ export const Containers = () => {
           <Grid item xs={12} >
               <Paper elevation={12} sx={{height:{xs:200, md:300,background:'-webkit-linear-gradient(to right, #5c258d, #4389a2)',
               background: '#5c258d',
-              background:deepPurple[400],
+              backgroundColor:deepPurple[400],
               display:'flex',
               flexDirection:'column',
               justifyContent:'center',
@@ -58,8 +58,11 @@ export const Containers = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={4} sx={{
             }} >
+                <Box>
+
+                </Box>
               <Paper elevation={12} sx={{height:{xs:200, md:250,
-                                background:deepPurple[400],
+                backgroundColor:deepPurple[400],
             }}} >
                   <Typography>
                       otro proyecto aca
@@ -68,7 +71,7 @@ export const Containers = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
               <Paper elevation={12} sx={{height:{xs:200, md:250,
-                background: deepPurple[400],
+                backgroundColor: deepPurple[400],
              
             }}} >
                   <Typography>
@@ -78,7 +81,7 @@ export const Containers = () => {
           </Grid>
           <Grid item xs={12} md={12} lg={4} >
               <Paper elevation={12} sx={{height:{xs:200, md:250,
-                    background:deepPurple[400],
+                    backgroundColor:deepPurple[400],
             }}} >
                   <Typography>
                   otro proyecto aca

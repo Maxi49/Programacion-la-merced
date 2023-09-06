@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider, createTheme } from '@mui/material';
+import { lightBlue } from '@mui/material/colors';
 
 const theme = createTheme()
 
@@ -56,7 +57,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
-                backgroundImage: 'linear-gradient(to right, #19FB9B, #8C01FA)',
+                backgroundColor: lightBlue[500],
                 backgroundClip: 'text',
               }}
               component={'h3'}
@@ -72,7 +73,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
-                backgroundImage: 'linear-gradient(to right, #0047FF, #00BCD4)',
+                backgroundColor: lightBlue[500],
                 backgroundClip: 'text',
                 
                 marginTop:3
@@ -91,7 +92,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
-                backgroundImage: 'linear-gradient(to right, #00FFBD, #025B8C)',
+                backgroundColor: lightBlue[500],
                 backgroundClip: 'text',
                 marginTop:3
               }}
@@ -99,7 +100,7 @@ export function MiddlePage() {
             >
               $5000
             </Typography>
-              <Typography  color={'#C4C4C4'} variant="h6">
+              <Typography color={'#C4C4C4'} variant="h6">
                 Pago Mensual ( puede subir trimestralmente )
               </Typography>
             </ThemeProvider>
