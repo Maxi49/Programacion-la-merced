@@ -6,7 +6,8 @@ import { Title } from './Title';
 import { Grid } from '@mui/material';
 import ResponsiveAppBar from './ResponsiveAppBar';
 import { MiddlePage } from './MiddlePage';
-import { PreFinal } from './PreFinal';
+import { Proyects } from './Proyects';
+
 
 
 export const App = () => {
@@ -20,7 +21,7 @@ export const App = () => {
         }}>
           <Title/>
           <MiddlePage/>
-          <PreFinal/>
+          <Proyects/>
         </Grid>
       </Container>
     </>

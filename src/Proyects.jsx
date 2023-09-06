@@ -5,7 +5,7 @@ import { Containers } from './Containers'
 
 
 
-export const PreFinal = () => {
+export const Proyects = () => {
   return (
     <Container fixed maxWidth='lg' sx={{mt:{xs:10,md:15}}} >
       <Containers/>

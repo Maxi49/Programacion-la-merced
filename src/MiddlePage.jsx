@@ -18,18 +18,28 @@ theme.typography.h1 = {
   ]
 }
 
+theme.typography.h2 = {
+  fontSize: '3rem',
+  [theme.breakpoints.up('md')] : {
+      fontSize: '4.5rem'
+  },
+  fontFamily: [
+      'Poppins'
+  ]
+}
+
 export function MiddlePage() {
   return (
       <Stack sx={{
         display:'flex',
         mt:{xs:3,md:12},
-        gap:{xs:0,sm:7,md:30}
+        gap:{xs:0,sm:7,md:20}
       }} direction={{ xs: 'column', sm: 'row' }}>
         <Grid item>
           <ThemeProvider theme={theme} >
             <Typography
             sx={{ mt: 9,mb:{xs:3,md:0} }}
-            variant="h1"
+            variant="h2"
             color={'white'}
             component={'h2'}
             >
@@ -39,15 +49,15 @@ export function MiddlePage() {
         </Grid>
         <Grid item>
           <Grid container direction={'column'}>
+            <ThemeProvider theme={theme} >
             <Typography
+              variant='h2'
               sx={{
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
                 backgroundImage: 'linear-gradient(to right, #19FB9B, #8C01FA)',
                 backgroundClip: 'text',
-                fontSize:{xs:70,md:100},
-
               }}
               component={'h3'}
             >
@@ -57,13 +67,14 @@ export function MiddlePage() {
                 Duracion del curso
               </Typography>
             <Typography
+             variant='h2'
               sx={{
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
                 backgroundImage: 'linear-gradient(to right, #0047FF, #00BCD4)',
                 backgroundClip: 'text',
-                fontSize:{xs:70,md:100},
+                
                 marginTop:3
               }}
               
@@ -75,13 +86,13 @@ export function MiddlePage() {
                 Capacidad de estudiantes
               </Typography>
             <Typography
+             variant='h2'
               sx={{
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
                 backgroundImage: 'linear-gradient(to right, #00FFBD, #025B8C)',
                 backgroundClip: 'text',
-                fontSize:{xs:70,md:100},
                 marginTop:3
               }}
               component={'h3'}
@@ -91,6 +102,7 @@ export function MiddlePage() {
               <Typography  color={'#C4C4C4'} variant="h6">
                 Pago Mensual ( puede subir trimestralmente )
               </Typography>
+            </ThemeProvider>
           </Grid>
         </Grid>
       </Stack>

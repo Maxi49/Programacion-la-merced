@@ -101,7 +101,6 @@ export const Title = () => {
                             borderStyle:'hidden',
                             backdropFilter:'blur(400px)',
                             boxShadow:'1px 1px 800px rgb(47, 0, 255,10)',
-                            
                         }} src="../Public/Python.png" alt=""/>
                 </Box>
         </Box>
