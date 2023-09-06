@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <>
       <ResponsiveAppBar/>
-        <Container fixed>
+        <Container fixed maxWidth='xl' >
         <Grid container sx={{
           display:'flex',
           justifyContent:'center',

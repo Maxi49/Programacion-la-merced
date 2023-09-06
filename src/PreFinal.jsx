@@ -7,7 +7,7 @@ import { Containers } from './Containers'
 
 export const PreFinal = () => {
   return (
-    <Container  sx={{mt:{xs:10,md:15}}} >
+    <Container fixed maxWidth='lg' sx={{mt:{xs:10,md:15}}} >
       <Containers/>
     </Container>
   )

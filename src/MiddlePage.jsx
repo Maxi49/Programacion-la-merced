@@ -7,13 +7,6 @@ import Typography from '@mui/material/Typography';
 
 export function MiddlePage() {
   return (
-    <Container
-      maxWidth="lg"
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-      }}
-    >
       <Stack sx={{
         display:'flex',
         mt:{xs:3,md:12},
@@ -86,6 +79,5 @@ export function MiddlePage() {
           </Grid>
         </Grid>
       </Stack>
-    </Container>
   );
 }
