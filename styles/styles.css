@@ -12,5 +12,5 @@ body{
 @media (min-width: 935px) {
     .responsive-img {
         max-width: 200px;
-    }
+    };
 }

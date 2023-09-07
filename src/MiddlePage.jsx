@@ -10,10 +10,16 @@ import { lightBlue } from '@mui/material/colors';
 const theme = createTheme()
 
 theme.typography.h1 = {
-  fontSize: '2rem',
-  [theme.breakpoints.up('md')] : {
-      fontSize: '5rem'
+  fontSize: '2.5rem',
+  [theme.breakpoints.up('sm')] : {
+    fontSize: '3rem'
   },
+  [theme.breakpoints.up('md')] : {
+      fontSize: '3rem'
+  },
+  [theme.breakpoints.up('lg')] : {
+    fontSize: '5rem'
+},
   fontFamily: [
       'Poppins'
   ]
@@ -21,8 +27,14 @@ theme.typography.h1 = {
 
 theme.typography.h2 = {
   fontSize: '3rem',
+  [theme.breakpoints.up('sm')] : {
+    fontSize: '3.4rem'
+  },
   [theme.breakpoints.up('md')] : {
-      fontSize: '4.5rem'
+      fontSize: '4rem'
+  },
+  [theme.breakpoints.up('lg')] : {
+    fontSize: '6rem'
   },
   fontFamily: [
       'Poppins'
@@ -33,23 +45,21 @@ export function MiddlePage() {
   return (
       <Stack sx={{
         display:'flex',
+        width:'100%',
+        justifyContent:'space-evenly',
         mt:{xs:3,md:12},
-        gap:{xs:0,sm:7,md:20}
-      }} direction={{ xs: 'column', sm: 'row' }}>
-        <Grid item>
-          <ThemeProvider theme={theme} >
+        gap:{xs:3,sm:5,md:10,lg:10}
+      }} direction={{ xs: 'column', sm: 'column',md:'row' }}>
+        <ThemeProvider theme={theme} >
             <Typography
-            sx={{ mt: 9,mb:{xs:3,md:0} }}
-            variant="h2"
+            sx={{ mt: 9,mb:{xs:3,md:0},pl:{xs:2.5,md:0,lg:0} }}
+            variant="h1"
             color={'white'}
             component={'h2'}
             >
             Unite al Taller.
             </Typography>
-          </ThemeProvider>
-        </Grid>
-        <Grid item>
-          <Grid container direction={'column'}>
+            <Grid item sx={{p:{xs:2.5}}}>
             <ThemeProvider theme={theme} >
             <Typography
               variant='h2'
@@ -57,7 +67,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
-                backgroundColor: lightBlue[500],
+                backgroundColor: lightBlue[400],
                 backgroundClip: 'text',
               }}
               component={'h3'}
@@ -73,9 +83,8 @@ export function MiddlePage() {
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
-                backgroundColor: lightBlue[500],
+                backgroundColor: lightBlue[400],
                 backgroundClip: 'text',
-                
                 marginTop:3
               }}
               
@@ -92,7 +101,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: 'text',
                 MozBackgroundClip: 'text',
                 color: 'transparent',
-                backgroundColor: lightBlue[500],
+                backgroundColor: lightBlue[400],
                 backgroundClip: 'text',
                 marginTop:3
               }}
@@ -101,11 +110,11 @@ export function MiddlePage() {
               $5000
             </Typography>
               <Typography color={'#C4C4C4'} variant="h6">
-                Pago Mensual ( puede subir trimestralmente )
+                Pago Mensual (puede subir trimestralmente)
               </Typography>
             </ThemeProvider>
           </Grid>
-        </Grid>
+          </ThemeProvider>
       </Stack>
   );
 }

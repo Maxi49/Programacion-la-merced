@@ -10,14 +10,30 @@ theme.typography.h3 = {
     [theme.breakpoints.up('md')] : {
         fontSize:'3.7rem'
     },
+
     fontFamily: [
         'Poppins'
     ]
 }
 theme.typography.h1 = {
-    fontSize: '2.5rem',
+    fontSize: '2.7rem',
     [theme.breakpoints.up('md')] : {
-        fontSize:'4rem'
+        fontSize:'4.5rem'
+    },
+    [theme.breakpoints.up('lg')] : {
+        fontSize:'5rem'
+    },
+    fontFamily: [
+        'Poppins'
+    ]
+}
+theme.typography.h4 = {
+    fontSize: '1.4rem',
+    [theme.breakpoints.up('md')] : {
+        fontSize:'2rem'
+    },
+    [theme.breakpoints.up('lg')] : {
+        fontSize:'2.5rem'
     },
     fontFamily: [
         'Poppins'
@@ -45,7 +61,7 @@ export const Title = () => {
                     <Typography variant='h5' component={'p'} sx={{
                         color:'grey',
                         mt:3,
-                        
+                        width:{md:'70%'}
                     }} >
                         Un taller dado por la institucion La Merced donde se explican varios conceptos de software y logica
                     </Typography>
@@ -104,7 +120,7 @@ export const Title = () => {
                         }} src="../Public/Python.png" alt=""/>
                 </Box>
         </Box>
-        <Typography variant='h5' sx={{display:'flex',justifyContent:'center',mt:10,ml:{xs:3,md:0}}} color={'grey'} >Lorem ipsum dolor sit amet consectetur adipisicing elit.</Typography>
+        <Typography variant='h4' sx={{display:'flex',textAlign:'center',mt:10,justifyContent:'center'}} color={'grey'} >Lorem ipsum dolor sit amet consectetur adipisicing elit.</Typography>
         </ThemeProvider>
     </Grid>
 )
