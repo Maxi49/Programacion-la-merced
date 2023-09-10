@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { lightBlue } from '@mui/material/colors';
-
+import '../styles/styles.css'
 const theme = createTheme()
 
 theme.typography.h1 = {

@@ -2,7 +2,7 @@ import { Grid, Typography,Button, createTheme, ThemeProvider } from '@mui/materi
 import { Box, Container } from '@mui/system'
 import React from 'react'
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
-
+import '../styles/styles.css'
 const theme = createTheme();
 
 theme.typography.h3 = {
@@ -107,7 +107,7 @@ export const Title = () => {
                 </Box>
             </Container>
                     
-                <Box sx={{marginLeft:9,
+                <Box sx={{marginLeft:0,
                     display:{md:'flex',xs:'none',sm:'none'}
                 }} >
                 <img width={400} style={{

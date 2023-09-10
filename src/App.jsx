@@ -8,8 +8,9 @@ import ResponsiveAppBar from './ResponsiveAppBar';
 import { MiddlePage } from './MiddlePage';
 import { Proyects } from './Proyects';
 import React from 'react';
+import AutoPlay from './AutoPlay';
 
-
+import '../styles/styles.css'
 export const App = () => {
  
   return (
@@ -22,9 +23,10 @@ export const App = () => {
         }}>
           <Title/>
           <MiddlePage/>
-          <Proyects/>
         </Grid>
+        <Proyects/>
       </Container>
+      <AutoPlay/>
   </>
 
   )

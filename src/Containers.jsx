@@ -3,7 +3,7 @@ import { Box, Container, Stack, display, height, typography } from '@mui/system'
 import React from 'react'
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import { deepPurple, grey,blue, purple,lightBlue,pink } from '@mui/material/colors';
-
+import '../styles/styles.css'
 
 const theme = createTheme()
 
@@ -84,10 +84,10 @@ export const Containers = () => {
             }}} >
               <Box m={{xs:2,sm:3,md:5}}>
                   <Typography variant='h3' >
-                      Coleccion de proyectos
+                      Biblioteca de Proyectos
                   </Typography>
                   <Typography mt={1} variant='h5' >
-                      info mini aca
+                      Todos los proyectos del año
                   </Typography>
                   <Box mt={2} >
                     <ArrowCircleRightOutlinedIcon fontSize='large' />
@@ -104,7 +104,7 @@ export const Containers = () => {
             }}} >
               <Box  m={{xs:2,md:3}} >
                   <Typography variant='h4' sx={{mb:1}} >
-                  otro proyecto aca
+                  Matematicas con IA
                   </Typography>
                   <ArrowCircleRightOutlinedIcon fontSize='large'  />
               </Box>
@@ -119,7 +119,7 @@ export const Containers = () => {
             }}} >
               <Box m={{xs:2,md:3}} >
                   <Typography variant='h4' sx={{mb:1}} >
-                  otro proyecto aca
+                  Interfaz Con Tkinter
                   </Typography>
                   <ArrowCircleRightOutlinedIcon fontSize='large'  />
               </Box>
@@ -134,7 +134,7 @@ export const Containers = () => {
                 }}} >
                   <Box  m={{xs:2,md:3}} >
                     <Typography sx={{mb:1}} variant='h4' >
-                  otro proyecto aca
+                    OOP 
                     </Typography>
                     <ArrowCircleRightOutlinedIcon fontSize='large' />
                   </Box>

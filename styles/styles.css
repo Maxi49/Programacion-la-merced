@@ -14,3 +14,14 @@ body{
         max-width: 200px;
     };
 }
+/* CSS */
+.img-responsive {
+  width: 100%; /* por defecto, la imagen ocupará el 100% del ancho disponible */
+}
+
+
+@media (min-width: 600px) { /* cuando la pantalla tiene al  menos 600px de ancho */
+  .img-responsive {
+    width: 95%; /* la imagen ocupará el 90% del ancho disponible */
+  }
+}
