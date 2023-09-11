@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    background: rgb(7, 6, 6);    
 }
   
 @media (max-width: 934px) {
@@ -16,12 +16,24 @@ body{
 }
 /* CSS */
 .img-responsive {
-  width: 100%; /* por defecto, la imagen ocupará el 100% del ancho disponible */
+  width: 90%; /* por defecto, la imagen ocupará el 100% del ancho disponible */
+  border:0px ;
+  border-radius: 0%;
+  box-shadow: 0px 0px 20px rgb(36, 36, 36);
+  margin-top:20px;
 }
 
+.videos {
+  width: 95%;
+}
 
 @media (min-width: 600px) { /* cuando la pantalla tiene al  menos 600px de ancho */
   .img-responsive {
     width: 95%; /* la imagen ocupará el 90% del ancho disponible */
+    margin-top:50px;
   }
+  .videos {
+    width: 95%;
+  }
+
 }

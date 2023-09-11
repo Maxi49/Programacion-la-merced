@@ -1,20 +1,20 @@
 
-import { Container, palette } from '@mui/system';
-import { grey } from '@mui/material/colors';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { Container} from '@mui/system';
 import { Title } from './Title';
-import { CssBaseline, Grid, useMediaQuery } from '@mui/material';
+import { Grid } from '@mui/material';
 import ResponsiveAppBar from './ResponsiveAppBar';
 import { MiddlePage } from './MiddlePage';
-import { Proyects } from './Proyects';
 import React from 'react';
 import AutoPlay from './AutoPlay';
 
 import '../styles/styles.css'
+import { Containers } from './Containers';
+import { Footer } from './Footer';
+
 export const App = () => {
- 
+
   return (
-    <>
+    <div>
       <ResponsiveAppBar/>
       <Container fixed maxWidth='xl' >
         <Grid container sx={{
@@ -23,11 +23,14 @@ export const App = () => {
         }}>
           <Title/>
           <MiddlePage/>
+          <Container fixed maxWidth='xl' sx={{mt:{xs:10,md:15}}} >
+            <Containers/>
+          </Container>
         </Grid>
-        <Proyects/>
       </Container>
       <AutoPlay/>
-  </>
+      <Footer/>
+  </div>
 
   )
 }
