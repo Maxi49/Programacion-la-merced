@@ -13,9 +13,9 @@ export const Footer = () => {
   const theme = createTheme();
 
   theme.typography.h2 = {
-    fontSize: "1.8rem",
+    fontSize: "1.3rem",
     [theme.breakpoints.up("md")]: {
-      fontSize: "4rem",
+      fontSize: "3rem",
     },
     fontFamily: ["Poppins"],
   };
@@ -50,20 +50,17 @@ export const Footer = () => {
               alignItems: "center",
             }}
           >
-            <Stack sx={{display:'flex',justifyContent:'center',alignItems:'center'}} direction={{xs:'column',md:'row'}} spacing={{xs:0,md:3}} mb={2} >
+            <Stack sx={{display:'flex',justifyContent:'center',alignItems:'center'}} direction={{xs:'column',md:'column'}} spacing={{xs:0,md:1}} mb={2} >
               <Typography color={"white"} variant="h2">
-                ¿Te interesa?
+                ¿Queres ver mas?
               </Typography>
               <Typography color={"white"} mb={5} variant="h2">
-                ¡Anotate!
+                ¡Mira nuestros Proyectos!
               </Typography>
             </Stack>
             <Stack direction={"row"} spacing={4}>
-              <Button variant="outlined" size={"medium"}>
-                Comenzar
-              </Button>
-              <Button variant="text" size={"medium"}>
-                Ver Proyectos
+              <Button variant="outlined" size={"large"}>
+                Proyectos
               </Button>
             </Stack>
           </Grid>

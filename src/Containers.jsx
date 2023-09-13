@@ -118,7 +118,7 @@ export const Containers = () => {
               elevation={12}
               sx={{
                 height: {
-                  xs: 200,
+                  xs: 180,
                   md: 300,
                   display: "flex",
                   flexDirection: "column",
@@ -149,8 +149,8 @@ export const Containers = () => {
               elevation={12}
               sx={{
                 height: {
-                  xs: 200,
-                  md: 250,
+                  xs: 120,
+                  md: 150,
                   background: "linear-gradient(to bottom,#0047FF,#00BCD4);",
                   border: "none",
                   display: "flex",
@@ -177,8 +177,8 @@ export const Containers = () => {
               elevation={12}
               sx={{
                 height: {
-                  xs: 200,
-                  md: 250,
+                  xs: 120,
+                  md: 150,
                   background: "linear-gradient(to bottom,#0047FF,#00BCD4);",
                   display: "flex",
                   flexDirection: "row",
@@ -204,8 +204,8 @@ export const Containers = () => {
               elevation={12}
               sx={{
                 height: {
-                  xs: 200,
-                  md: 250,
+                  xs: 120,
+                  md: 150,
                   background: "linear-gradient(to bottom,#0047FF,#00BCD4);",
                   display: "flex",
                   flexDirection: "row",

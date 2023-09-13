@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 
 import { Grid } from "@mui/material";
 
-const pages = ["Proyectos", "Anotarse"];
+const pages = ["La Merced","Proyectos","Sobre Nosotros"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -67,6 +67,7 @@ function ResponsiveAppBar() {
               <MenuIcon fontSize="large" />
             </IconButton>
             <Menu
+            
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -82,10 +83,11 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem  key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -132,7 +134,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block",fontSize:17, width:170 }}
               >
                 {page}
               </Button>

@@ -148,7 +148,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: "text",
                 MozBackgroundClip: "text",
                 color: "transparent",
-                backgroundColor: lightBlue[400],
+                background:'radial-gradient(circle,#00BCD4,#0047FF)',
                 backgroundClip: "text",
               }}
               component={"h3"}
@@ -164,7 +164,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: "text",
                 MozBackgroundClip: "text",
                 color: "transparent",
-                backgroundColor: lightBlue[400],
+                background:'radial-gradient(circle,#00BCD4,#0047FF)',
                 backgroundClip: "text",
                 marginTop: 3,
               }}
@@ -181,7 +181,7 @@ export function MiddlePage() {
                 WebkitBackgroundClip: "text",
                 MozBackgroundClip: "text",
                 color: "transparent",
-                backgroundColor: lightBlue[400],
+                background: 'radial-gradient(circle,#00BCD4,#0047FF)',
                 backgroundClip: "text",
                 marginTop: 3,
               }}

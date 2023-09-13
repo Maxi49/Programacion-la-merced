@@ -42,14 +42,16 @@ export default class AutoPlay extends Component {
             pb: { xs: 5, md: 20 },
             pt: 3,
             mt: 20,
-            background: "radial-gradient(circle,#434343,#000000)",
+            //background: "radial-gradient(circle,#bdc3c7,#000000)",
+            background: "radial-gradient(circle, rgb(7, 6, 6), rgb(7, 6, 6))",    
             boxShadow: "0.4px 0.4px 10px #ffff",
-            border: "1px solid black",
+            borderTop: "1px solid black",
+            borderBottom: "1px solid black",
             ":hover": {
-              borderColor: "white",
-              boxShadow: "1px 1px 100px rgb(255, 255, 255,40)",
+              borderColor: "#3a7bd5",
               backdropFilter: "blur(50px)",
               transition: "all 0.6s ease", // Ajusta la duración y el tipo de transición a tus necesidades
+              boxShadow: `1px 1px 100px #3a7bd5`, // Ajusta los valores del box-shadow a tus necesidades
             },
           }}
         >
@@ -65,7 +67,7 @@ export default class AutoPlay extends Component {
               <img
                 style={{ marginBottom: 50 }}
                 className="img-responsive"
-                src="../Public/fotosTaller/YO.jpg"
+                src="../Public/fotosTaller/maxi.jpg"
               />
             </Box>
             <Box
@@ -78,7 +80,7 @@ export default class AutoPlay extends Component {
               <img
                 style={{ marginBottom: 50 }}
                 className="img-responsive"
-                src="../Public/fotosTaller/unacompu.jpg"
+                src="../Public/fotosTaller/compuLaMerced2.jpg"
                 alt=""
               />
             </Box>
@@ -106,7 +108,7 @@ export default class AutoPlay extends Component {
               <img
                 style={{ marginBottom: 50 }}
                 className="img-responsive"
-                src="../Public/fotosTaller/aleInCelphonebro.jpg"
+                src="../Public/fotosTaller/ale.jpg"
                 alt=""
               />
             </Box>
@@ -132,7 +134,7 @@ export default class AutoPlay extends Component {
             >
               <img
                 className="img-responsive"
-                src="../Public/fotosTaller/algo.jpg"
+                src="../Public/fotosTaller/mela.jpg"
                 alt=""
               />
             </Box>

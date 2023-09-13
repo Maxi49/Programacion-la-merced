@@ -5,10 +5,11 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Box, Container, Stack } from "@mui/system";
 import React from "react";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import "../styles/styles.css";
+import SchoolIcon from '@mui/icons-material/School';
 const theme = createTheme();
 
 theme.typography.h3 = {
@@ -71,7 +72,7 @@ export const Title = () => {
                     fontFamily: "Poppins",
                   }}
                 >
-                  Taller de programacion
+                  Taller de Programacion
                 </Typography>
 
                 <Typography
@@ -87,18 +88,12 @@ export const Title = () => {
                   varios conceptos de software y logica
                 </Typography>
               </Box>
+              
               <Box sx={{ display: "flex", flexDirection: "row", mt: 2 }}>
+                <Stack spacing={2} direction={'row'} >
+
                 <Button
                   variant="contained"
-                  size={"medium"}
-                  sx={{
-                    mr: 3,
-                  }}
-                >
-                  Anotarse
-                </Button>
-                <Button
-                  variant="outlined"
                   size="medium"
                   sx={{
                     display: "flex",
@@ -110,6 +105,7 @@ export const Title = () => {
                     alignSelf: "center",
                   }}
                 >
+                  
                   <Box
                     sx={{
                       display: "flex",
@@ -142,6 +138,60 @@ export const Title = () => {
                     />
                   </Box>
                 </Button>
+                <Button
+                  variant="outlined"
+                  size="medium"
+                  href="https://colegiolamerced.edu.ar/web/"
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    borderRadius: 5,
+                    textAlign: "center",
+                    alignSelf: "center",
+                    borderColor:theme.palette.error.main,
+                    color:theme.palette.error.main,
+                    ":hover": { 
+                      borderColor:theme.palette.error.main,
+                    }
+                  }}
+                >
+                  
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      textAlign: "center",
+                      alignSelf: "center",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        marginLeft: 1,
+                        alignItems: "center",
+                        textAlign: "center",
+                        alignSelf: "center",
+                      }}
+                      variant="subtitle2"
+                      component={"h3"}
+                    >
+                      La Merced
+                    </Typography>
+                    <SchoolIcon
+                      sx={{
+                        marginLeft: 1,
+                        alignItems: "center",
+                        textAlign: "center",
+                        alignSelf: "center",
+                        mb: 0.2,
+                      }}
+                    />
+                  </Box>
+                </Button>
+                </Stack>
+
               </Box>
             </Box>
           </Container>
