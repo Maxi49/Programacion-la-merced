@@ -9,7 +9,10 @@ export const Videos = () => {
   theme.typography.h3 = {
     fontSize: "1.5rem",
     [theme.breakpoints.up("md")]: {
-      fontSize: "5.5rem",
+      fontSize: "3.5rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "4.5rem",
     },
     fontFamily: ["Poppins"],
   };
@@ -31,7 +34,7 @@ export const Videos = () => {
       fontSize: "1.4rem",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.6rem",
+      fontSize: "1.4rem",
     },
     fontFamily: ["Poppins"],
   };
@@ -147,7 +150,7 @@ export const Videos = () => {
               <Typography mt={2} mb={2} variant="h4">
                 Octavio 
               </Typography>
-              <Typography variant="h6" width={{ xs: '90%', md: 500 }}>
+              <Typography variant="h6" width={{ xs: '90%', md: 400 }}>
                 {octi.slice(0, firstFrase, 50)}
               </Typography>
 
@@ -181,7 +184,7 @@ export const Videos = () => {
               <Typography mt={2} mb={2} variant="h4">
                 Lucas
               </Typography>
-              <Typography variant="h6" width={{ xs: '90%', md: 500 }}>
+              <Typography variant="h6" width={{ xs: '90%', md: 400 }}>
                 {lucas.slice(0, secondFrase, 50)}
               </Typography>
             </Paper>

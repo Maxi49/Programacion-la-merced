@@ -45,7 +45,7 @@ theme.typography.h3 = {
 theme.typography.h4 = {
   fontSize: "1.4rem",
   [theme.breakpoints.up("md")]: {
-    fontSize: "2rem",
+    fontSize: "1.6rem",
   },
   fontFamily: ["Poppins"],
 };
@@ -53,6 +53,9 @@ theme.typography.h5 = {
   fontSize: "1.2rem",
   [theme.breakpoints.up("md")]: {
     fontSize: "2rem",
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "3rem",
   },
   fontFamily: ["Poppins"],
 };
