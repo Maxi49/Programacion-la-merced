@@ -1,7 +1,6 @@
 import { Paper, ThemeProvider, Typography, createTheme } from "@mui/material";
-import { Box, Stack, border, height } from "@mui/system";
+import { Box, Stack } from "@mui/system";
 import React, { useEffect, useState } from "react";
-import AutoPlay from "./AutoPlay";
 
 export const Videos = () => {
   const theme = createTheme();

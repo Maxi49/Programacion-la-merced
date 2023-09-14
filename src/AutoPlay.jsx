@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
-import { Stack, Typography, Paper, createTheme } from "@mui/material";
-import { ThemeProvider } from "@mui/system";
+import { Paper, createTheme } from "@mui/material";
 import "../styles/styles.css";
 const theme = createTheme();
 
