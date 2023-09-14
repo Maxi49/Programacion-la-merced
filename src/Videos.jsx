@@ -7,15 +7,24 @@ export const Videos = () => {
   const theme = createTheme();
 
   theme.typography.h3 = {
-    fontSize: "1.5rem",
+    
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "1.3rem",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.7rem",
+    },
     [theme.breakpoints.up("md")]: {
-      fontSize: "5.5rem",
+      fontSize: "3rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "4.5rem",
     },
     fontFamily: ["Poppins"],
   };
   
   theme.typography.h4 = {
-    fontSize: "1.2rem",
+    fontSize: "1.1rem",
     [theme.breakpoints.up("md")]: {
       fontSize: "2rem",
     },
@@ -91,7 +100,7 @@ export const Videos = () => {
         elevation={24}
         sx={{
           width: "80%",
-          height: { xs: 1000, md: "100%" },
+          height: { xs: 1000,sm:1100,md:"100%" },
           mt: 5,
           p: { xs: "2%", md: "5%" },
           display: "flex",

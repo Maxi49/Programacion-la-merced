@@ -3,6 +3,7 @@ body{
     background: rgb(7, 6, 6);    
     
 }
+
   
 @media (max-width: 934px) {
     .responsive-img {
@@ -31,6 +32,16 @@ body{
 @media (min-width: 600px) { /* cuando la pantalla tiene al  menos 600px de ancho */
   .img-responsive {
     width: 95%; /* la imagen ocupará el 90% del ancho disponible */
+    margin-top:50px;
+  }
+  .videos {
+    width: 95%;
+  }
+
+}
+@media (max-width: 570px) { /* cuando la pantalla tiene al  menos 600px de ancho */
+  .img-responsive {
+    width: 90%; /* la imagen ocupará el 90% del ancho disponible */
     margin-top:50px;
   }
   .videos {

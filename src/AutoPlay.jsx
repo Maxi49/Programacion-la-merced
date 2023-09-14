@@ -51,7 +51,7 @@ export default class AutoPlay extends Component {
               borderColor: "#3a7bd5",
               backdropFilter: "blur(50px)",
               transition: "all 0.6s ease", // Ajusta la duración y el tipo de transición a tus necesidades
-              boxShadow: `1px 1px 100px #3a7bd5`, // Ajusta los valores del box-shadow a tus necesidades
+              boxShadow: `1px 1px 20px #3a7bd5`, // Ajusta los valores del box-shadow a tus necesidades
             },
           }}
         >
