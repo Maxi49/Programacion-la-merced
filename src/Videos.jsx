@@ -1,7 +1,6 @@
 import { Paper, ThemeProvider, Typography, createTheme } from "@mui/material";
-import { Box, Stack, border, height } from "@mui/system";
+import { Box, Stack } from "@mui/system";
 import React, { useEffect, useState } from "react";
-import AutoPlay from "./AutoPlay";
 
 export const Videos = () => {
   const theme = createTheme();
@@ -15,7 +14,11 @@ export const Videos = () => {
       fontSize: "1.7rem",
     },
     [theme.breakpoints.up("md")]: {
+<<<<<<< HEAD
       fontSize: "3rem",
+=======
+      fontSize: "3.5rem",
+>>>>>>> 01e0da319250791e7c9bf8e97f89e3a7a878781f
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "4.5rem",
@@ -40,7 +43,7 @@ export const Videos = () => {
       fontSize: "1.4rem",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.6rem",
+      fontSize: "1.4rem",
     },
     fontFamily: ["Poppins"],
   };
@@ -156,7 +159,7 @@ export const Videos = () => {
               <Typography mt={2} mb={2} variant="h4">
                 Octavio 
               </Typography>
-              <Typography variant="h6" width={{ xs: '90%', md: 500 }}>
+              <Typography variant="h6" width={{ xs: '90%', md: 400 }}>
                 {octi.slice(0, firstFrase, 50)}
               </Typography>
 
@@ -190,7 +193,7 @@ export const Videos = () => {
               <Typography mt={2} mb={2} variant="h4">
                 Lucas
               </Typography>
-              <Typography variant="h6" width={{ xs: '90%', md: 500 }}>
+              <Typography variant="h6" width={{ xs: '90%', md: 400 }}>
                 {lucas.slice(0, secondFrase, 50)}
               </Typography>
             </Paper>

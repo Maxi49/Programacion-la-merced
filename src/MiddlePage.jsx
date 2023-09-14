@@ -4,7 +4,6 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Grow, ThemeProvider, createTheme, useMediaQuery } from "@mui/material";
-import { lightBlue } from "@mui/material/colors";
 import "../styles/styles.css";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 
