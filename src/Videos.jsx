@@ -6,7 +6,6 @@ export const Videos = () => {
   const theme = createTheme();
 
   theme.typography.h3 = {
-    
     [theme.breakpoints.up("xs")]: {
       fontSize: "1.3rem",
     },
@@ -14,11 +13,7 @@ export const Videos = () => {
       fontSize: "1.7rem",
     },
     [theme.breakpoints.up("md")]: {
-<<<<<<< HEAD
-      fontSize: "3rem",
-=======
       fontSize: "3.5rem",
->>>>>>> 01e0da319250791e7c9bf8e97f89e3a7a878781f
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "4.5rem",
@@ -116,10 +111,10 @@ export const Videos = () => {
         }}
       >
         <Typography variant="h3" color={"white"}>
-          ¿Que se hace en el taller?
+          ¿Qué hacemos?
         </Typography>
         <Typography variant="h4" mb={"5%"} color={"white"}>
-          Los chicos nos cuentan
+          Te contamos...
         </Typography>
         <Stack
           spacing={2}
@@ -135,31 +130,36 @@ export const Videos = () => {
             sx={{
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
+              justifyContent: "start",
               alignItems: "center",
             }}
             display={"flex"}
             flexDirection={"column"}
           >
             <video id="firstVideo" className="videos" controls>
-              <source src="../Public/fotosTaller/explicacionOctavio.mp4" />
+              <source src="../fotosTaller/explicacionOctavio.mp4" />
             </video>
             <Paper
               square
               elevation={24}
               sx={{
-                height: { xs: 200, md: 300 },
+                overflowY: 'scroll', // Cambia 'overflow' a 'overflowY' para hacer el scroll solo vertical
+                height: { xs: 150, md: 200 },
                 width: "95%",
                 display: "flex",
                 flexDirection: "column",
                 background: "radial-gradient(circle,#00d2ff,#0072ff)",
                 alignItems: "center",
+                justifyContent: "start",
+                '&::-webkit-scrollbar': { // Agrega estas líneas para hacer el scroll transparente
+                  display: 'none'
+                }
               }}
             >
               <Typography mt={2} mb={2} variant="h4">
                 Octavio 
               </Typography>
-              <Typography variant="h6" width={{ xs: '90%', md: 400 }}>
+              <Typography variant="h6" width={{ xs: '90%', md: 400,lg:500 }}>
                 {octi.slice(0, firstFrase, 50)}
               </Typography>
 
@@ -167,33 +167,39 @@ export const Videos = () => {
           </Box>
           <Box
             sx={{
+              
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
+              justifyContent: "start",
               alignItems: "center",
             }}
             display={"flex"}
             flexDirection={"column"}
           >
             <video id="secondVideo" className="videos" controls>
-              <source src="../Public/fotosTaller/explicacionLucas.mp4" />
+              <source src="../fotosTaller/explicacionLucas.mp4" />
             </video>
             <Paper
               square
               elevation={24}
               sx={{
-                height: { xs: 200, md: 300 },
+                overflowY: 'scroll', // Cambia 'overflow' a 'overflowY' para hacer el scroll solo vertical
+                height: { xs: 150, md: 200 },
                 width: "95%",
                 display: "flex",
                 flexDirection: "column",
-                background: "radial-gradient(circle,#00d1ff,#0072ff)",
+                background: "radial-gradient(circle,#00d2ff,#0072ff)",
                 alignItems: "center",
+                justifyContent: "start",
+                '&::-webkit-scrollbar': { // Agrega estas líneas para hacer el scroll transparente
+                  display: 'none'
+                }
               }}
             >
               <Typography mt={2} mb={2} variant="h4">
                 Lucas
               </Typography>
-              <Typography variant="h6" width={{ xs: '90%', md: 400 }}>
+              <Typography variant="h6" width={{ xs: '90%', md: 400,lg:500 }}>
                 {lucas.slice(0, secondFrase, 50)}
               </Typography>
             </Paper>

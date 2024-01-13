@@ -50,7 +50,7 @@ function ResponsiveAppBar() {
             <Box sx={{ m: 2, mr: 5 }}>
               <img
                 className="responsive-img"
-                src="../Public/Escudo-la-merced.png"
+                src="../Escudo-la-merced.png"
                 alt="La Merced"
               />
             </Box>

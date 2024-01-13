@@ -5,7 +5,8 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Grow, ThemeProvider, createTheme, useMediaQuery } from "@mui/material";
 import "../styles/styles.css";
-import GroupAddIcon from "@mui/icons-material/GroupAdd";
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 
 const theme = createTheme();
 
@@ -38,22 +39,7 @@ theme.typography.h2 = {
 };
 
 export function MiddlePage() {
-  const [number, setNumber] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setNumber((prevNumber) => {
-        if (prevNumber < 42.5) {
-          return prevNumber + 2.9;
-        } else {
-          clearInterval(timer);
-          return prevNumber;
-        }
-      });
-    }, 100); 
-
-    return () => clearInterval(timer);
-  }, []);
 
   const [checked, setChecked] = useState(false);
 
@@ -109,11 +95,95 @@ export function MiddlePage() {
       direction={{ xs: "column", sm: "column", md: "row" }}
     >
       <ThemeProvider theme={theme}>
-        <Stack
+      <Grid item sx={{ p: { xs: 2.5 } }}>
+      <Stack
           direction={{ xs: "row", sm: "row", md: "row" }}
           sx={{ mt: { xs: 1, md: 12 } }}
-        >
-          <GroupAddIcon
+      >
+          <MenuBookIcon
+            sx={{
+              fontSize: iconSize,
+              mt: 2,
+              mb: { xs: 3, md: 0 },
+              color: "white"
+            }}
+            style={{}}
+          />
+          <Grow orientation="horizontal" timeout={1000} ref={ref} in={checked} >
+            <Typography
+              sx={{
+                ml: { xs: 0, md: 4 },
+                mt: 2,
+                mb: { xs: 3, md: 0 },
+                pl: { xs: 2.5, md: 0, lg: 0 },
+
+              }}
+              variant="h1"
+              color={"white"}
+              component={"h2"}
+            >
+              Las Bases
+            </Typography>
+          </Grow>
+        </Stack>
+          <ThemeProvider theme={theme}>
+            <Typography
+              variant="h2"
+              sx={{
+                WebkitBackgroundClip: "text",
+                MozBackgroundClip: "text",
+                color: "transparent",
+                background:'radial-gradient(circle,#00BCD4,#0047FF)',
+                backgroundClip: "text",
+              }}
+              component={"h3"}
+            >
+              Variables
+            </Typography>
+            <Typography color={"#C4C4C4"} variant="h6">
+             Para almacenar Informacion
+            </Typography>
+            <Typography
+              variant="h2"
+              sx={{
+                WebkitBackgroundClip: "text",
+                MozBackgroundClip: "text",
+                color: "transparent",
+                background:'radial-gradient(circle,#00BCD4,#0047FF)',
+                backgroundClip: "text",
+                marginTop: 3,
+              }}
+              component={"h3"}
+            >
+              Ciclos
+            </Typography>
+            <Typography color={"#C4C4C4"} variant="h6">
+              de repeticion
+            </Typography>
+            <Typography
+              variant="h2"
+              sx={{
+                WebkitBackgroundClip: "text",
+                MozBackgroundClip: "text",
+                color: "transparent",
+                background: 'radial-gradient(circle,#00BCD4,#0047FF)',
+                backgroundClip: "text",
+                marginTop: 3,
+              }}
+              component={"h3"}
+            >
+              Objetos
+            </Typography>
+            <Typography color={"#C4C4C4"} variant="h6">
+              como la vida real
+            </Typography>
+          </ThemeProvider>
+        </Grid>
+        <Stack
+          direction={{ xs: "row", sm: "row", md: "row" }}
+          sx={{ mt: { xs: 1, md: 15 } }}
+      >
+          <CodeOutlinedIcon
             sx={{
               fontSize: iconSize,
               mt: 2,
@@ -135,64 +205,10 @@ export function MiddlePage() {
               color={"white"}
               component={"h2"}
             >
-              Unite al Taller
+              Codigo
             </Typography>
           </Grow>
         </Stack>
-        <Grid item sx={{ p: { xs: 2.5 } }}>
-          <ThemeProvider theme={theme}>
-            <Typography
-              variant="h2"
-              sx={{
-                WebkitBackgroundClip: "text",
-                MozBackgroundClip: "text",
-                color: "transparent",
-                background:'radial-gradient(circle,#00BCD4,#0047FF)',
-                backgroundClip: "text",
-              }}
-              component={"h3"}
-            >
-              {number.toFixed(1)}hs+
-            </Typography>
-            <Typography color={"#C4C4C4"} variant="h6">
-              Duracion del curso
-            </Typography>
-            <Typography
-              variant="h2"
-              sx={{
-                WebkitBackgroundClip: "text",
-                MozBackgroundClip: "text",
-                color: "transparent",
-                background:'radial-gradient(circle,#00BCD4,#0047FF)',
-                backgroundClip: "text",
-                marginTop: 3,
-              }}
-              component={"h3"}
-            >
-              Ilimitada
-            </Typography>
-            <Typography color={"#C4C4C4"} variant="h6">
-              Capacidad de estudiantes
-            </Typography>
-            <Typography
-              variant="h2"
-              sx={{
-                WebkitBackgroundClip: "text",
-                MozBackgroundClip: "text",
-                color: "transparent",
-                background: 'radial-gradient(circle,#00BCD4,#0047FF)',
-                backgroundClip: "text",
-                marginTop: 3,
-              }}
-              component={"h3"}
-            >
-              $5000
-            </Typography>
-            <Typography color={"#C4C4C4"} variant="h6">
-              Pago Mensual (puede subir trimestralmente)
-            </Typography>
-          </ThemeProvider>
-        </Grid>
       </ThemeProvider>
     </Stack>
   );

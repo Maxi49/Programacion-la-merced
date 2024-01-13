@@ -7,9 +7,9 @@ import {
 } from "@mui/material";
 import { Box, Container, Stack } from "@mui/system";
 import React from "react";
-import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import "../styles/styles.css";
 import SchoolIcon from '@mui/icons-material/School';
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 const theme = createTheme();
 
 theme.typography.h3 = {
@@ -127,7 +127,7 @@ export const Title = () => {
                     >
                       Proyectos
                     </Typography>
-                    <CodeOutlinedIcon
+                    <FormatListBulletedIcon
                       sx={{
                         marginLeft: 1,
                         alignItems: "center",
@@ -140,7 +140,7 @@ export const Title = () => {
                 </Button>
                 <Button
                   variant="outlined"
-                  size="medium"
+                  size="large"
                   href="https://colegiolamerced.edu.ar/web/"
                   sx={{
                     display: "flex",
@@ -165,19 +165,21 @@ export const Title = () => {
                       alignItems: "center",
                       textAlign: "center",
                       alignSelf: "center",
+                    
                     }}
                   >
                     <Typography
+                    variant="subtitle2"
                       sx={{
                         marginLeft: 1,
                         alignItems: "center",
                         textAlign: "center",
                         alignSelf: "center",
+                  
                       }}
-                      variant="subtitle2"
                       component={"h3"}
                     >
-                      La Merced
+                      Institucion
                     </Typography>
                     <SchoolIcon
                       sx={{
@@ -212,7 +214,7 @@ export const Title = () => {
                 backdropFilter: "blur(400px)",
                 boxShadow: "1px 1px 800px rgb(47, 0, 255,10)",
               }}
-              src="../Public/Python.png"
+              src="../Python.png"
               alt=""
             />
           </Box>

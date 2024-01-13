@@ -66,7 +66,7 @@ export default class AutoPlay extends Component {
               <img
                 style={{ marginBottom: 50 }}
                 className="img-responsive"
-                src="../Public/fotosTaller/maxi.jpg"
+                src="../fotosTaller/maxi.jpg"
               />
             </Box>
             <Box
@@ -79,21 +79,7 @@ export default class AutoPlay extends Component {
               <img
                 style={{ marginBottom: 50 }}
                 className="img-responsive"
-                src="../Public/fotosTaller/compuLaMerced2.jpg"
-                alt=""
-              />
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                ml: { xs: 2.5, sm: 1, md: 1, lg: 1 },
-              }}
-            >
-              <img
-                style={{ marginBottom: 50 }}
-                className="img-responsive"
-                src="../Public/fotosTaller/paz.jpg"
+                src="../fotosTaller/compuLaMerced2.jpg"
                 alt=""
               />
             </Box>
@@ -107,7 +93,21 @@ export default class AutoPlay extends Component {
               <img
                 style={{ marginBottom: 50 }}
                 className="img-responsive"
-                src="../Public/fotosTaller/ale.jpg"
+                src="../fotosTaller/paz.jpg"
+                alt=""
+              />
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                ml: { xs: 2.5, sm: 1, md: 1, lg: 1 },
+              }}
+            >
+              <img
+                style={{ marginBottom: 50 }}
+                className="img-responsive"
+                src="../fotosTaller/ale.jpg"
                 alt=""
               />
             </Box>
@@ -120,7 +120,7 @@ export default class AutoPlay extends Component {
             >
               <img
                 className="img-responsive"
-                src="../Public/fotosTaller/compuLaMercedsIA.jpg"
+                src="../fotosTaller/compuLaMercedsIA.jpg"
                 alt=""
               />
             </Box>
@@ -133,7 +133,7 @@ export default class AutoPlay extends Component {
             >
               <img
                 className="img-responsive"
-                src="../Public/fotosTaller/mela.jpg"
+                src="../fotosTaller/mela.jpg"
                 alt=""
               />
             </Box>
